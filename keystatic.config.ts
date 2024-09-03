@@ -3,7 +3,8 @@ import { config, fields, collection } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'github',
+    repo:  'sjrichards88/keystatic-astro'
   },
   collections: {
     posts: collection({
