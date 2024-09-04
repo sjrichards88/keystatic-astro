@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('posts');
@@ -20,5 +21,7 @@ console.log(entry)
 ---
 
 <h1>{entry.data.title}</h1>
+
 <Content />
-<img src={entry.data.image} alt={entry.data.title} />
+
+<Image src={entry.data.image} alt={entry.data.title} />

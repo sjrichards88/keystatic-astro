@@ -19,8 +19,8 @@ export default config({
         content: fields.markdoc({ label: 'Content' }),
         image: fields.image({ 
           label: 'Image',
-          directory: 'public/images/',
-          publicPath: '/images/'
+          directory: 'src/assets/images/',
+          publicPath: '@assets/images/'
         }),
       },
     }),
