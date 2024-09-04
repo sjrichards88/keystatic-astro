@@ -17,7 +17,11 @@ export default config({
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
         content: fields.markdoc({ label: 'Content' }),
-        image: fields.image({ label: 'Image' }),
+        image: fields.image({ 
+          label: 'Image',
+          directory: 'public/images/',
+          publicPath: '/images/'
+        }),
       },
     }),
   },
