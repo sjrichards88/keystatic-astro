@@ -5,9 +5,11 @@ import markdoc from '@astrojs/markdoc';
 
 import cloudflare from '@astrojs/cloudflare';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), markdoc(),  keystatic()],
   output: 'hybrid',
-  adapter: cloudflare()
+  adapter: vercel()
 });
