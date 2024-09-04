@@ -5,7 +5,7 @@ import markdoc from '@astrojs/markdoc';
 
 import cloudflare from '@astrojs/cloudflare';
 
-import vercel from '@astrojs/vercel';
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
